@@ -6,13 +6,21 @@ namespace Class_Project___Deliverable_2___Conditional_Statement
     {
         static void Main(string[] args)
         {
+            //Ask user to enter a numeric grade 
             Console.WriteLine("Please enter the anticpated grade to be earned from the course.");
 
+            //Allows the users input to entered to later be matched to a grade earned.
             string input = Console.ReadLine();
-            
+
+            //This section reads the entry of the user. 
             int grade = int.Parse(input);
 
-            if (grade >= 98)
+            //Results based off of user input.
+            if (grade > 100)
+            {
+                Console.WriteLine("Enter a number within the range of 0 - 100.");
+            }
+            else if (grade >= 98)
             {
                 Console.WriteLine("You have earned the letter grade of A+");
             }
